@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	{{ parent() }}
+	| Rédiger un post
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="row">
+			<div class="col s12 m12 l12">
+				<h4>Rédiger un post</h4>
+			</div>
+		</div>
+		{% include "includes/form_post.html.twig" %}
+	</div>
+{% endblock %}

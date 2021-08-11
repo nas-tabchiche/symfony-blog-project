@@ -1,0 +1,45 @@
+index:
+    path: /
+    controller: App\Controller\BlogController::index
+
+index_admin:
+    path: /admin
+    controller: App\Controller\BlogController::index_admin
+
+liste_posts:
+    path: /admin/posts
+    controller: App\Controller\BlogController::liste_posts
+
+liste_categories:
+    path: /admin/categories
+    controller: App\Controller\BlogController::liste_categories
+
+ajout_post:
+    path: /add
+    controller: App\Controller\BlogController::add
+
+afficher_post:
+    path: /show/{id}
+    controller: App\Controller\BlogController::show
+
+modifier_post:
+    path: /edit/{id}
+    controller: App\Controller\BlogController::edit
+    requirements:
+      id: '\d+'
+
+supprimer_post:
+    path: /delete/{id}
+    controller: App\Controller\BlogController::delete
+    requirements:
+      id: '\d+'
+
+delete_comm:
+    path: /delete_comm/{id}
+    controller: App\Controller\BlogController::delete_comm
+    requirements:
+      id: '\d+'
+
+liste_comm:
+    path: /admin/comments 
+    controller: App\Controller\BlogController::liste_comm
